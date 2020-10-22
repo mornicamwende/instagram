@@ -14,7 +14,7 @@ class PostListView(ListView):
     model = post
     template_name = 'instaapp/home.html' #<app>/<model> <viewtype>.html
     context_object_name = 'posts'
-    ordering = ['date_posted']
+    ordering = ['-date_posted']
 
 class PostDetailView(DetailView):
     model = post
